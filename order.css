@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    background-color: yellow;
+    padding: 0 10%;
+    height: 100px;
+}
+
+.nav-container {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container img {
+    cursor: pointer;
+    outline: none;
+}
+
+section {
+    height: 100vh;
+    padding: 0 10%;
+}
+
+section h1 {
+    font-size: 50px;
+    transition-property: letter-spacing;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1s;
+}
+
+section h1:hover {
+    letter-spacing: 5px;
+}
+
+section .content {
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .content form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: gray;
+    width: 350px;
+    height: 85%;
+    box-shadow: rgba(0, 0, 0, 0.35) 8px 5px 10px;
+}
+
+form label {
+    margin: 10px 0;
+}
+
+form input, select {
+    padding: 10px;
+    outline: none;
+}
+
+form input[type="button"] {
+    margin-top: 30px;
+    border: 0;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition-property: background-color, border, color;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+form input[type="button"]:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
